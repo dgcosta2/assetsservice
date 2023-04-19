@@ -1,0 +1,12 @@
+
+spring:
+  application:
+    name: assets-service
+  profiles:
+    active: dev
+  config:
+    import: configserver:http://localhost:8071
+
+logging:
+  level:
+    web: debug
