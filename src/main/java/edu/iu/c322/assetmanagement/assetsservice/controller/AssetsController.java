@@ -18,7 +18,7 @@ public class AssetsController {
 
     private LicensingClient licensingClient;
 
-    public LicensingController(AssetsRepository repository, LicensingClient licensingClient) {
+    public AssetsController(AssetsRepository repository, LicensingClient licensingClient) {
         this.repository = repository;
         this.licensingClient = licensingClient;
     }
