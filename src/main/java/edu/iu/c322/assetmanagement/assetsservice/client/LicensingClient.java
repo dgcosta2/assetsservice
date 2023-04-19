@@ -16,7 +16,7 @@ public class LicensingClient {
         this.restTemplate = restTemplate;
     }
 
-    public Optional<License> getOrganization(int licenseId){
+    public Optional<License> getLicense(int licenseId){
         ResponseEntity<License> restExchange =
                 restTemplate.exchange(
                         "http://licensing-service/licensings/{licenseId}",
